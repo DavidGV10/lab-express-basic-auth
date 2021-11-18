@@ -1,5 +1,5 @@
 <div>
-    <form action="/auth/sign-up" method="post">
+    <form action="/auth/signup" method="post">
         <label for="username">Username</label>
         <input type="text" name="username" required>
         
@@ -7,6 +7,10 @@
         <input type="password" name="password" id="password" required>
 
         <button type="submit">Create an account</button>
+        {{#if message}}
+        <span>{{message}}</span>
+        {{/if}}
 
     </form>
+    <p><a href="/">Home</a></p>
 </div>
